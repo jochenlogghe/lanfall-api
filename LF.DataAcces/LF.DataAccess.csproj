@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43069190-9624-4BFC-A460-C1EF161FA618}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LF.DataAcces</RootNamespace>
+    <AssemblyName>LF.DataAcces</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LanfallContext.cs" />
+    <Compile Include="Migrations\201703241254289_Initial.cs" />
+    <Compile Include="Migrations\201703241254289_Initial.Designer.cs">
+      <DependentUpon>201703241254289_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241311028_RelationShipUserClan.cs" />
+    <Compile Include="Migrations\201703241311028_RelationShipUserClan.Designer.cs">
+      <DependentUpon>201703241311028_RelationShipUserClan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241315570_RelationShipUserUserDetail.cs" />
+    <Compile Include="Migrations\201703241315570_RelationShipUserUserDetail.Designer.cs">
+      <DependentUpon>201703241315570_RelationShipUserUserDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241318398_UserDetailAttributes.cs" />
+    <Compile Include="Migrations\201703241318398_UserDetailAttributes.Designer.cs">
+      <DependentUpon>201703241318398_UserDetailAttributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241325219_RelationShipSeats.cs" />
+    <Compile Include="Migrations\201703241325219_RelationShipSeats.Designer.cs">
+      <DependentUpon>201703241325219_RelationShipSeats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241330177_RelationShipRoles.cs" />
+    <Compile Include="Migrations\201703241330177_RelationShipRoles.Designer.cs">
+      <DependentUpon>201703241330177_RelationShipRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241332199_RelationShipRolesTableAdjustments.cs" />
+    <Compile Include="Migrations\201703241332199_RelationShipRolesTableAdjustments.Designer.cs">
+      <DependentUpon>201703241332199_RelationShipRolesTableAdjustments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241339153_RelationShipCompetitions.cs" />
+    <Compile Include="Migrations\201703241339153_RelationShipCompetitions.Designer.cs">
+      <DependentUpon>201703241339153_RelationShipCompetitions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241350323_RelationShipCompetitionUserClans.cs" />
+    <Compile Include="Migrations\201703241350323_RelationShipCompetitionUserClans.Designer.cs">
+      <DependentUpon>201703241350323_RelationShipCompetitionUserClans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241355224_RelationShipCompetitionGame.cs" />
+    <Compile Include="Migrations\201703241355224_RelationShipCompetitionGame.Designer.cs">
+      <DependentUpon>201703241355224_RelationShipCompetitionGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241358065_RelationShipEditionCompetition.cs" />
+    <Compile Include="Migrations\201703241358065_RelationShipEditionCompetition.Designer.cs">
+      <DependentUpon>201703241358065_RelationShipEditionCompetition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703241411315_RelationShipCompetitionAdmin.cs" />
+    <Compile Include="Migrations\201703241411315_RelationShipCompetitionAdmin.Designer.cs">
+      <DependentUpon>201703241411315_RelationShipCompetitionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LF.Model\LF.Model.csproj">
+      <Project>{8f6fc450-c783-47f2-b996-67113444bfe6}</Project>
+      <Name>LF.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201703241254289_Initial.resx">
+      <DependentUpon>201703241254289_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241311028_RelationShipUserClan.resx">
+      <DependentUpon>201703241311028_RelationShipUserClan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241315570_RelationShipUserUserDetail.resx">
+      <DependentUpon>201703241315570_RelationShipUserUserDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241318398_UserDetailAttributes.resx">
+      <DependentUpon>201703241318398_UserDetailAttributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241325219_RelationShipSeats.resx">
+      <DependentUpon>201703241325219_RelationShipSeats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241330177_RelationShipRoles.resx">
+      <DependentUpon>201703241330177_RelationShipRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241332199_RelationShipRolesTableAdjustments.resx">
+      <DependentUpon>201703241332199_RelationShipRolesTableAdjustments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241339153_RelationShipCompetitions.resx">
+      <DependentUpon>201703241339153_RelationShipCompetitions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241350323_RelationShipCompetitionUserClans.resx">
+      <DependentUpon>201703241350323_RelationShipCompetitionUserClans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241355224_RelationShipCompetitionGame.resx">
+      <DependentUpon>201703241355224_RelationShipCompetitionGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241358065_RelationShipEditionCompetition.resx">
+      <DependentUpon>201703241358065_RelationShipEditionCompetition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241411315_RelationShipCompetitionAdmin.resx">
+      <DependentUpon>201703241411315_RelationShipCompetitionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
