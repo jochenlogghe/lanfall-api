@@ -2,13 +2,13 @@
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace LF.DataAcces
+namespace LF.DataAccess
 {
     public class LanfallContext : DbContext
     {
         public LanfallContext() : base("name=LF2")
         {
-
+            
         }
 
         public DbSet<Clan> Clans { get; set; }
@@ -51,7 +51,7 @@ namespace LF.DataAcces
 
             modelBuilder.Entity<Competition>()
                 .HasRequired(x => x.CompetitionType)
-                .WithMany();
+                .WithMany(x => x.Competitions);
 
 
             modelBuilder.Entity<User>()
@@ -64,7 +64,7 @@ namespace LF.DataAcces
 
 
             modelBuilder.Entity<Competition>()
-                .HasMany(x => x.Users)
+                .HasMany(x => x.ParticipatingUsers)
                 .WithMany(x => x.Competitions)
                                  .Map(x =>
                                  {
@@ -74,7 +74,7 @@ namespace LF.DataAcces
                                  });
 
             modelBuilder.Entity<Competition>()
-                .HasMany(x => x.Clans)
+                .HasMany(x => x.ParticipatingClans)
                 .WithMany(x => x.Competitions)
                                  .Map(x =>
                                  {

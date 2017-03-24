@@ -98,6 +98,10 @@
     <Compile Include="Migrations\201703241411315_RelationShipCompetitionAdmin.Designer.cs">
       <DependentUpon>201703241411315_RelationShipCompetitionAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703241510551_ModelRefinement.cs" />
+    <Compile Include="Migrations\201703241510551_ModelRefinement.Designer.cs">
+      <DependentUpon>201703241510551_ModelRefinement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -147,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703241411315_RelationShipCompetitionAdmin.resx">
       <DependentUpon>201703241411315_RelationShipCompetitionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703241510551_ModelRefinement.resx">
+      <DependentUpon>201703241510551_ModelRefinement.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

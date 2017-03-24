@@ -5,14 +5,14 @@ namespace LF.DataAcces.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<LF.DataAcces.LanfallContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<LF.DataAccess.LanfallContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(LF.DataAcces.LanfallContext context)
+        protected override void Seed(LF.DataAccess.LanfallContext context)
         {
             //  This method will be called after migrating to the latest version.
 
