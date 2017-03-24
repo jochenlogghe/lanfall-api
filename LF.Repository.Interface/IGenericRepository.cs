@@ -1,10 +1,14 @@
-﻿using LF.Model;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace LF.Repository
+﻿namespace LF.Repository
 {
+    using LF.Model;
+    using System;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    /// <summary>
+    /// Generic Repository
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public interface IGenericRepository<T> : IDisposable where T : Entity
     {
         Task<IQueryable<T>> GetAll();

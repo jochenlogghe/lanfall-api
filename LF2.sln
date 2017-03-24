@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LF.DataAccess", "LF.DataAcc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LF.Repository", "LF.Repository\LF.Repository.csproj", "{2E3397F8-3CE2-4084-BC3A-B47FC69FD2E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LF.Repository.Interface", "LF.Repository.Interface\LF.Repository.Interface.csproj", "{C054C67D-8719-47BD-80DE-DA4DD9C63A7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2E3397F8-3CE2-4084-BC3A-B47FC69FD2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E3397F8-3CE2-4084-BC3A-B47FC69FD2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E3397F8-3CE2-4084-BC3A-B47FC69FD2E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C054C67D-8719-47BD-80DE-DA4DD9C63A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C054C67D-8719-47BD-80DE-DA4DD9C63A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C054C67D-8719-47BD-80DE-DA4DD9C63A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C054C67D-8719-47BD-80DE-DA4DD9C63A7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
